@@ -1,3 +1,5 @@
+//todo -> copiar carpeta > terminal > cp -r 01_boilerplate/ 03_types_interfaces
+
 
 //! INTRO TYPESCRIPT
 //? https://www.typescriptlang.org/
