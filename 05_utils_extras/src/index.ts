@@ -1,53 +1,64 @@
-// SET UP: npm install -D typescript ts-node tslib @types/node
-
-let saludo: string = "Hola Mundo"
-
-console.log(`${saludo} desde Sevilla!`)
 
 
-// al hacer el npm run start si da fallo
-// El problema ocurre porque ts-node está ejecutando TypeScript en un entorno ESM (ECMAScript Modules), 
-// y por defecto, Node.js no reconoce la extensión .ts en ese modo. 
+//! FUNCTIONS RETURN TYPES
+const sum = (a:number, b:number):number => a+b
 
-// hay //* dos formas de solucionarlo
-
-
-//! CREAR TSCONFIG.JSON (en carpeta raíz)
-//Si tienes un archivo tsconfig.json, asegúrate de que "module" esté configurado como "CommonJS":
-// {
-//   "compilerOptions": {
-//     "module": "CommonJS",
-//     "target": "ESNext",
-//     "outDir": "dist",
-//     "rootDir": "src",
-//     "strict": true
-//   }
-// }
+//se puede dar el caso en el que no queramos devolver un valor, que solo queramos modificar algo como un elemento en el DOM
+// o una State 
 
 
-//! Ejecuta con el --loader de ts-node
-// si necesitamos mantener ESM
-
-// "scripts": {
-//   "start": "node --loader ts-node/esm src/index.ts"
-
-
-
-//! TS-NODE
-// ts-node permite ejecutar TypeScript directamente sin compilarlo antes.
-// Pero como Node.js no entiende archivos .ts de forma nativa, ts-node necesita saber si el código es CommonJS o ESM.
-
-// Si usas ESM (import/export), debes indicarle a ts-node que lo cargue correctamente:
+//? VOID
+// para ellos empleamos el tipo void que quiere decir que no devuleve nada
+const addListener = (entities: []):void =>{
+  // añade listeners con window.addEventListener
+}
 
 
-// node --loader ts-node/esm src/index.ts
+//?NEVER
+// enel caso en que la función siempre sea true
+const neverFn = ():never=>{
+  while(true){}
+}
 
-// Si no haces esto, Node.js no sabrá cómo interpretar los archivos .ts.
+
+//! UTILIDADES Y EXTRAS
+//? https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+type User={
+  id:number,
+  name:string,
+  email:string,
+  role?:string,
+  password:string
+}
 
 
-//! RESUMEN
-// ✅ TypeScript sí soporta ESM, pero Node.js no lo maneja bien por defecto.
-// ✅ Para que Node.js acepte import/export, necesitas "type": "module" en package.json y un tsconfig.json con "module": "ESNext".
-// ✅ ts-node necesita configuraciones extra (--loader) si quieres usar ESM directamente sin compilar.
+const user:User ={
+  id:1,
+  name: "miguelito",
+  email: "email@email",
+  role: "admin",
+  password:"password123"
 
-// Si quieres evitar estos problemas, usa CommonJS (require()) y listo. 
+}
+
+//Partial
+// nos permite crear un nuevo tipo a raíz de parte de los valores de otro
+type PartialUser = Partial<User>;
+const partialUser: PartialUser = {
+  email: "email2@email",
+}
+
+//Required
+// nos permite crear un nueco tipo con campos requridos de otro
+
+
+//ReadOnly
+// nos permite pasar información sin capacidad para modificar el objeto
+
+
+//Pick
+//crear un nnuevo tipo extrayento 
+
+//Omit
+// crear un nuevo tipo omitiendo un valor

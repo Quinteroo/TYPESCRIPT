@@ -1,4 +1,5 @@
 // SET UP: npm install -D typescript ts-node tslib @types/node
+// copiar carpteta: terminal >> cp -r nombrecarpetaacopiar nombrecarpetaacrear
 
 let saludo: string = "Hola Mundo"
 
