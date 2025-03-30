@@ -1,14 +1,12 @@
 {
-  
-  "name": "03_types_interfaces",
+  "name": "04_functions_generics",
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "ts-node": "node --loader ts-node/esm src/index.ts"
+    "start": "ts-node ."
   },
   "keywords": [],
-  "author": "qugodev",
+  "author": "QUGODEV",
   "license": "ISC",
   "description": "",
   "devDependencies": {

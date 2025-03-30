@@ -31,6 +31,8 @@ interface playerExtends extends Player{
 // otra diferencia es que la interfaz no me permite tipar un valor en específico
 type PlayerPosition = "MD" | "DC" | "GM"
 
+// ni tampoco funciones, arrays ni otras cosas
+
 
 //! interfaces vienen muy buen para objetos y clases pero el 95% lo podemos desarrollar con Types
 
