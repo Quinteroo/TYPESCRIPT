@@ -2,7 +2,7 @@
 
 
 //! INTRO TYPESCRIPT
-//? https://www.typescriptlang.org/
+//? https://www.typescriptlang.org/ 
 
 1. // es un superset de JS, es decir, está construido sobre Js
 2. // lo que hace es incluir tipado de datos en nuestro código, volviéndose más seguro y predecible.
