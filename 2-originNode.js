@@ -3,14 +3,19 @@
 //! ORIGEN E HISTORIA DE NODE.JS
 
 ¿Cómo nació Node.js?  
-Node.js fue creado en 2009 por Ryan Dahl, un desarrollador de software que quería mejorar la manera en que los servidores manejaban muchas conexiones simultáneas.  
+Node.js fue creado en 2009 por Ryan Dahl, un desarrollador de software que quería mejorar la
+manera en que los servidores manejaban muchas conexiones simultáneas.  
 
-Antes de Node.js, la mayoría de los servidores web funcionaban de forma bloqueante, lo que significaba que cada petición tenía que esperar a que la anterior terminara antes de ser procesada. Ryan Dahl pensó:  
+Antes de Node.js, la mayoría de los servidores web funcionaban de forma bloqueante, lo que significaba que cada petición tenía 
+que esperar a que la anterior terminara antes de ser procesada. Ryan Dahl pensó:  
 
 *"¿Por qué no usar un modelo basado en eventos para manejar múltiples conexiones de manera eficiente?"*  
 
-Así nació Node.js, basado en JavaScript del lado del servidor y utilizando el motor V8 de Google Chrome, que es súper rápido para ejecutar JavaScript.  
+Así nació Node.js, basado en JavaScript del lado del servidor y utilizando el motor V8 de Google Chrome, 
+que es súper rápido para ejecutar JavaScript.  
 
+
+  
 Línea de tiempo de Node.js  
 
 2009 - Nacimiento de Node.js  
