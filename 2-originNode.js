@@ -50,9 +50,4 @@ Línea de tiempo de Node.js
 - Crecimiento de frameworks como NestJS y Fastify.  
 - Mayor integración con WebAssembly y Edge Computing.  
 
-¿Por qué Node.js fue revolucionario?  
-- Usa JavaScript en el backend, permitiendo que los desarrolladores frontend lo usen también en servidores.  
-- Modelo asíncrono y no bloqueante, lo que lo hace ideal para aplicaciones en tiempo real (chats, APIs, streaming, etc.).  
-- npm facilita la reutilización de paquetes, con más de 1 millón de módulos disponibles.  
-- Gran comunidad y soporte, lo que ha impulsado su adopción en startups y grandes empresas.  
 
