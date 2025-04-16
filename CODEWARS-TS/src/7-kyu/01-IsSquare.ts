@@ -26,13 +26,13 @@ export default function isSquare(n: number): boolean {
 };
 
 
-Math.sqrt(n) devuelve la raíz cuadrada.
+//Math.sqrt(n) //devuelve la raíz cuadrada.
 
-Number.isInteger(...) comprueba si el resultado es un número entero exacto (sin decimales).
+//Number.isInteger(...) //comprueba si el resultado es un número entero exacto (sin decimales).
 
 Ejemplo:
 
-Math.sqrt(9) → 3 → entero ✅
+Math.sqrt(9) //→ 3 → entero ✅
 
-Math.sqrt(8) → 2.828... → no entero ❌
+Math.sqrt(8) //→ 2.828... → no entero ❌
 
