@@ -36,11 +36,7 @@ export function rowSumOddNumbers(n:number):number{
     while(arr.length < suma ){
         if(x %2!== 0){
             arr.push(x)
-            x++
-        }else{
-            x++
-            arr.push(x)
-            x++
+            x += 2
         }
     }
 
